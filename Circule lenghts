@@ -12,7 +12,7 @@ public class Circle {
 		double l;
 		l = 2 * radius * Math.PI;
 		System.out.println("Circule lenghts is: " + l);
-
+		sc.close();
 	}
 
 }
