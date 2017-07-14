@@ -30,6 +30,7 @@ public class MaxOfFourNumbers {
 			max = d;
 		}
 		System.out.println("max = " + max);
+		sc.close();
 	}
 
 }
