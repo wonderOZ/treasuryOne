@@ -19,7 +19,7 @@ public class Polyndrom {
 			System.out.println("Number " + number + " isn't polyndrom.");
 		}
 		sc.close();
-		System.out.println(number / 100000 +" "+ number % 10 +" "+ number % 100000 / 10000 +" "+ number % 100 / 10 +" "+number % 10000 / 1000 +" "+ number % 1000 / 100 );
+		
 	}
 
 }
