@@ -1,24 +1,25 @@
 package net.ukr.green_dream;
 
-import java.util.Scanner;
-
 public class MainC {
 
 	public static void main(String[] args) {
-		int count = 0;
-		char b = 'b';
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Input text and press Enter");
-		String a = sc.nextLine();
-		char[] array = a.toCharArray();
-		for (char c : array) {
-			if (c == b) {
-				count++;
+		int array[] = { 3, 5, 8, 25, 8, -33, 6, 99, 0, 65 };
+		int a = 25;
+
+		int index = findIndex(array, a);
+		System.out.println("Index is " + index);
+
+	}
+
+	public static int findIndex(int[] array, int a) {
+		int index = -1;
+		for (int i = 0; i < array.length; i++) {
+			if (a == array[i]) {
+				index = i;
+				break;
 			}
 
 		}
-		sc.close();
-		System.out.println("There are " + count + " symbols " + b + " in your text");
+		return index;
 	}
-
 }

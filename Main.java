@@ -3,14 +3,20 @@ package net.ukr.green_dream;
 public class Main {
 
 	public static void main(String[] args) {
-		int[] array = { 0, 5, 2, 4, 7, 1, 3, 19 };
-		int count = 0;
-		for (int i : array) {
-			if (i % 2 > 0) {
-				count++;
-			}
-		}
-		System.out.println(count);
+		int array[] = { 3, 5, 8, 25, 8, -33, 6, 99, 0, 65 };
+		int max = 0;
+		max = findMax(array, max);
+		System.out.println("Max is " + max);
+
 	}
 
+	public static int findMax(int[] array, int max) {
+		max = array[0];
+		for (int member : array) {
+			if (member > max) {
+				max = member;
+			}
+		}
+		return max;
+	}
 }
